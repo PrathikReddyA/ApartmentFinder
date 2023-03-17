@@ -1,0 +1,92 @@
+@charset "UTF-8";
+
+/* Button Properpties */
+.button-1, .button-2 {
+	letter-spacing: 1px;
+	font-size: 12px;
+	display: inline-block;
+	position: relative;
+	border-radius: 2px;
+	overflow: hidden;
+	-webkit-transition: 0.2s ease-out;
+	transition: 0.2s ease-out;
+	font-family: sans-serif;
+	cursor:pointer;
+	border: none;
+	padding: 12px 20px 12px 20px;
+	margin: 5px;
+	background-color: rgb(0, 153, 255);
+	text-align: center;
+	color: rgb(255, 255, 255);
+	border-radius: 20px;
+}
+/*Psuedo Class*/
+.button-1:focus, .button-2:focus {
+	outline: none;
+}
+/*Psuedo Class*/
+.button-1:hover {
+	box-shadow: 0 3px 6px 0 rgba(0, 200, 255, 0.22), 0 4px 4px 0 rgba(0, 219, 253, 0.35);
+
+	color: rgb(12, 12, 12);
+	text-decoration: none;
+	background-color: rgba(255, 255, 255, 0.6);
+}
+/*Psuedo Class*/
+.button-1:active {
+	box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.44), 0 1px 1px 0 rgba(0, 0, 0, 0.68);
+}
+
+/*Psuedo Class and Psuedo element*/
+.button-1:focus::before {
+	display: block;
+	height: 150px;
+	width: 150px;
+	top: -58px;
+	left: -30px;
+	opacity: 0;
+	content: "";
+	background: #AAA;
+	border-radius: 1000px;
+	position: absolute;
+	animation-name: fade;
+	animation-timing-function: ease-out;
+    animation-duration: 1s;
+	z-index: -2;
+}
+/*Key Frames*/
+@keyframes fade {
+	0% {opacity: 1; transform: scale(0);}
+	50% {opacity: 1; transform: scale(1);}
+    100% {opacity: 0;}
+}
+
+/* buttons shadow properties */
+.with-shadow {
+	box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.35), 0 1px 1px 0 rgba(0, 0, 0, 0.59);
+	background-color: rgba(255, 255, 255, 0.3);
+}
+
+/*Psuedo Class*/
+.button-2:hover {
+	box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.3), 0 15px 15px 0 rgba(0, 0, 0, 0.4);
+	background-color: #FFF !important;
+	color: #222 !important;
+}
+/*Psuedo Class*/
+.button-2:active {
+	-webkit-transition: 0.05s ease-out;
+	transition: 0.05s ease-out;
+	box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.44), 0 1px 1px 0 rgba(0, 0, 0, 0.68);
+}
+
+.display-flex{
+	display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+body{
+background: linear-gradient(45deg, #FC466B, #3F5EFB);
+}

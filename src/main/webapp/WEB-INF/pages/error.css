@@ -1,0 +1,15 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap');
+  
+.error {
+	font-size: 72px;
+	background: -webkit-linear-gradient(rgb(100, 255, 57), rgb(0, 187, 255));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-family: 'Bungee Shade', cursive;
+	text-align: center;
+  }
+body {
+  background:rgb(12, 12, 12)
+  
+}
